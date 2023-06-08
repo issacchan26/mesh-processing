@@ -1,4 +1,4 @@
-# mesh_processing
+# CPII mesh processing
 This repo is to provide a series of algorithm to process mesh and point cloud files. \
 It provides format transfer, mesh simplification, mesh rigid transform and annotation transform 
 
