@@ -4,8 +4,8 @@ It provides format transfer, mesh simplification, mesh rigid transform and annot
 
 ## Installation
 
-Use the pip to install dependencies
-You may use conda instead
+Use the pip to install dependencies. \
+You may use conda instead \
 For PyTorch3D, please follow this link to install: https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md
 
 ```bash
