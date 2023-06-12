@@ -17,13 +17,15 @@ Create the corresponding folder before you run the script. \
 For example, in [mesh simplification](./mesh_reduce.py), you need to create two folders: "mesh_data" and "output_mesh" \
 Make sure the directories as below:
 
+```bash
 ├── mesh_data
 │   ├── 1_139.obj
 │   ├── 1_139.obj.mtl
 │   ├── 1_141.obj
 │   ├── 1_141.obj.mtl
 ├── output_mesh
-├── mesh_reduce.py
+└── mesh_reduce.py
+```
 
 ## Mesh format convert
 [obj to pcd format](./obj_to_pcd.py) \
