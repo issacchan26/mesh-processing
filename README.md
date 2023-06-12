@@ -25,13 +25,13 @@ Make sure the directories as below:
 └── mesh_reduce.py
 ```
 ## Mesh simplification
-[reduce the mesh to 10000 vertices](./mesh_reduce.py) \
+[reduce the mesh to 10000 vertices](./mesh_reduce.py)
 
 ## Mesh format convert
 [obj to pcd format](./obj_to_pcd.py) \
 [obj to ply format](./obj_to_ply.py)
 
-## txt convert into obj mesh
+## Convert txt file into obj mesh
 [txt to obj format](./txt_to_obj.py) \
 [xyz to obj format](./xyz_to_obj.py)
 
@@ -41,7 +41,7 @@ Make sure the directories as below:
 
 ## Mesh annotation operation
 [output the annotation to simplified txt](./annotation_output.py) \
-[add rgb value into ply file](./apply_color_to_ply.py) \
+[add rgb value into ply file](./apply_color_to_ply.py)
 
 This section transform obj file and corresponding txt annotation file into single ply file with color. \
 Please make sure the directories as below:
