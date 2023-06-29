@@ -1,6 +1,6 @@
 # Mesh processing
 This repo is to provide a series of algorithm to process mesh and point cloud files. \
-It provides format transfer, mesh simplification, mesh rigid transform and annotation transform 
+It provides format transfer, mesh simplification, mesh rigid transform and point cloud (.PCD) annotation transform 
 
 ## Getting Started
 Use the pip to install dependencies, you may use conda instead \
@@ -15,7 +15,7 @@ pip install open3d
 ## Usage
 Create the corresponding folder before you run the script. \
 For example, in [mesh simplification](./mesh_reduce.py), you need to create two folders: "mesh_data" and "output_mesh" \
-Make sure the directories as below:
+Make sure the directories are created as below:
 
 ```bash
 ├── mesh_data
@@ -25,7 +25,8 @@ Make sure the directories as below:
 └── mesh_reduce.py
 ```
 ## Mesh simplification
-[reduce the mesh to 10000 vertices](./mesh_reduce.py)
+[reduce the mesh to target vertices](./mesh_reduce.py) \
+You may adjust the the number of vertices by changing the parameter TARGET (default=10000)
 
 ## Mesh format convert
 [obj to pcd format](./obj_to_pcd.py) \
@@ -36,13 +37,10 @@ Make sure the directories as below:
 [xyz to obj format](./xyz_to_obj.py)
 
 ## Mesh rigid transform
-Currently we suppor .obj format as input for meshes \ 
-[mesh augmentation](./mesh_rigid_transform.py) \
-It provides three functions for mesh augmentations:rotation, translation and scaling. \
-You may apply these functions by calling rotate_mesh, translate_mesh and scale_mesh respectively. \
+Currently we suppor .obj format as input for meshes
 
-[shrink and fatten function in Blender](./shrink_fatten.py) \
-It provides the Blender function: "shrink and fatten", to change the shape of meshes by moving selected vertices along their own normal (perpendicular to the face)
+[mesh augmentation](./mesh_rigid_transform.py) provides three functions for mesh augmentations:rotation, translation and scaling. \
+[shrink and fatten](./shrink_fatten.py) provides the Blender function: "shrink and fatten", to change the shape of meshes by moving selected vertices along their own normal (perpendicular to the face)
 
 ## Point cloud annotation operation
 [output the annotation to simplified txt](./annotation_output.py) \
