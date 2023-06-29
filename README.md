@@ -36,10 +36,15 @@ Make sure the directories as below:
 [xyz to obj format](./xyz_to_obj.py)
 
 ## Mesh rigid transform
+Currently we suppor .obj format as input for meshes \ 
 [mesh augmentation](./mesh_rigid_transform.py) \
-[shrink and flatten function in Blender](./shrink_flatten.py)
+It provides three functions for mesh augmentations:rotation, translation and scaling. \
+You may apply these functions by calling rotate_mesh, translate_mesh and scale_mesh respectively. \
 
-## Mesh annotation operation
+[shrink and fatten function in Blender](./shrink_fatten.py) \
+It provides the Blender function: "shrink and fatten", to change the shape of meshes by moving selected vertices along their own normal (perpendicular to the face)
+
+## Point cloud annotation operation
 [output the annotation to simplified txt](./annotation_output.py) \
 [add rgb value into ply file](./apply_color_to_ply.py) \
 Please refer to [point-cloud-annotation](https://github.com/issacchan26/point-cloud-annotation.git) for more details
